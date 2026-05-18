@@ -1,0 +1,254 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "email": "admin@example.com",
+      "password": "admin123",
+      "role": "admin",
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "lastLogin": null,
+      "actionsCount": 0,
+      "clientId": 1
+    },
+    {
+      "id": "iSqPkKGHAo0",
+      "username": "15iv234",
+      "email": "15iv234@mail.ru",
+      "password": "12345",
+      "role": "user",
+      "createdAt": "2026-05-15T07:24:55.304Z",
+      "lastLogin": null,
+      "actionsCount": 0,
+      "clientId": 2
+    }
+  ],
+  "clients": [
+    {
+      "id": "1",
+      "name": "Администратор",
+      "email": "admin@example.com",
+      "phone": "+7 999 000-00-00",
+      "tags": "Админ, Создатель",
+      "surveysCompleted": 0,
+      "history": [],
+      "createdBy": 1,
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "userId": 1
+    },
+    {
+      "id": "5HvphYiyYf4",
+      "name": "15iv234",
+      "email": "15iv234@mail.ru",
+      "phone": "",
+      "tags": "Новый пользователь",
+      "surveysCompleted": 1,
+      "history": [
+        "UX/UI Тестирование интерфейса: 15.05.2026"
+      ],
+      "createdBy": 2,
+      "createdAt": "2026-05-15T07:24:55.304Z",
+      "userId": 2
+    }
+  ],
+  "surveys": [
+    {
+      "id": "1",
+      "title": "Оценка удовлетворённости продуктом",
+      "status": "active",
+      "questions": [
+        {
+          "text": "Как часто вы пользуетесь нашим продуктом?",
+          "type": "choice",
+          "options": [
+            "Ежедневно",
+            "Несколько раз в неделю",
+            "Раз в неделю",
+            "Раз в месяц",
+            "Реже"
+          ]
+        },
+        {
+          "text": "Оцените качество продукта по шкале от 1 до 10",
+          "type": "scale",
+          "min": 1,
+          "max": 10
+        },
+        {
+          "text": "Что вам больше всего нравится в нашем продукте?",
+          "type": "text"
+        },
+        {
+          "text": "Что мы можем улучшить?",
+          "type": "text"
+        }
+      ],
+      "createdBy": 1,
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "responsesCount": 0
+    },
+    {
+      "id": "2",
+      "title": "UX/UI Тестирование интерфейса",
+      "status": "active",
+      "questions": [
+        {
+          "text": "Как вы оцениваете удобство навигации?",
+          "type": "choice",
+          "options": [
+            "Отлично",
+            "Хорошо",
+            "Средне",
+            "Плохо"
+          ]
+        },
+        {
+          "text": "Оцените скорость загрузки страниц",
+          "type": "scale",
+          "min": 1,
+          "max": 10
+        },
+        {
+          "text": "Что бы вы изменили в интерфейсе?",
+          "type": "text"
+        }
+      ],
+      "createdBy": 1,
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "responsesCount": 0
+    },
+    {
+      "id": "3",
+      "title": "HR Опрос: Вовлечённость персонала",
+      "status": "active",
+      "questions": [
+        {
+          "text": "Как долго вы работаете в компании?",
+          "type": "choice",
+          "options": [
+            "Менее года",
+            "1-3 года",
+            "3-5 лет",
+            "5-10 лет",
+            "Более 10 лет"
+          ]
+        },
+        {
+          "text": "Насколько вы довольны своей работой?",
+          "type": "scale",
+          "min": 1,
+          "max": 10
+        },
+        {
+          "text": "Что вам нравится в компании больше всего?",
+          "type": "text"
+        },
+        {
+          "text": "Что можно улучшить в рабочих процессах?",
+          "type": "text"
+        },
+        {
+          "text": "Как вы оцениваете отношения в коллективе?",
+          "type": "choice",
+          "options": [
+            "Отличные",
+            "Хорошие",
+            "Средние",
+            "Напряжённые",
+            "Плохие"
+          ]
+        },
+        {
+          "text": "Устраивает ли вас заработная плата?",
+          "type": "choice",
+          "options": [
+            "Полностью",
+            "Частично",
+            "Не устраивает",
+            "Категорически нет"
+          ]
+        },
+        {
+          "text": "Как вы оцениваете возможности карьерного роста?",
+          "type": "choice",
+          "options": [
+            "Отличные",
+            "Хорошие",
+            "Средние",
+            "Плохие",
+            "Отсутствуют"
+          ]
+        },
+        {
+          "text": "Порекомендуете ли вы компанию как место работы?",
+          "type": "choice",
+          "options": [
+            "Да",
+            "Скорее да",
+            "Не знаю",
+            "Скорее нет",
+            "Нет"
+          ]
+        }
+      ],
+      "createdBy": 1,
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "responsesCount": 0
+    }
+  ],
+  "responses": [
+    {
+      "id": "FV0aU9Z20pI",
+      "surveyId": "2",
+      "surveyTitle": "UX/UI Тестирование интерфейса",
+      "answers": [
+        "Отлично",
+        8,
+        "vvv"
+      ],
+      "date": "15.05.2026, 10:25:30",
+      "user": "15iv234",
+      "userId": 2
+    }
+  ],
+  "activities": [
+    {
+      "id": "YAXL-_Al5Z8",
+      "text": "Пройден опрос: UX/UI Тестирование интерфейса",
+      "user": "15iv234",
+      "userId": 2,
+      "time": "15.05.2026, 10:25:30",
+      "timestamp": "2026-05-15T07:25:30.320Z"
+    }
+  ],
+  "userActions": [
+    {
+      "userId": 1778676560886,
+      "action": "logout",
+      "details": {},
+      "timestamp": "2026-05-15T07:24:22.652Z",
+      "id": "Jt9d_tJ-x0Q"
+    },
+    {
+      "userId": 2,
+      "action": "register",
+      "details": {
+        "email": "15iv234@mail.ru"
+      },
+      "timestamp": "2026-05-15T07:24:55.373Z",
+      "id": "9n0aqnqfq-M"
+    },
+    {
+      "id": "aocXZc8hG84",
+      "userId": 2,
+      "action": "take_survey",
+      "details": {
+        "surveyTitle": "UX/UI Тестирование интерфейса",
+        "surveyId": "2",
+        "answersCount": 3
+      },
+      "timestamp": "2026-05-15T07:25:30.372Z"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
